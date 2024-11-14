@@ -8,7 +8,7 @@ const initialState = () =>
 const textSlice = createSlice({
   name: "text",
   initialState,
-  reducer: {
+  reducers: {
     addText: (state, action) => {
       state.push(action.payload);
     },

@@ -4,7 +4,7 @@ import TextList from "./components/TextList";
 import { useSelector } from "react-redux";
 
 function App() {
-  const texts = useSelector((state) => state.text);
+  const texts = useSelector(state => state.text);
 
   useEffect(() => {
     localStorage.setItem("texts", JSON.stringify(texts));
