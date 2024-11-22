@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import textSlice from "../slices/textSlice";
+import textReducer from "../slices/textSlice";
 
 const store = configureStore({
   reducer: {
-    text: textSlice,
+    text: textReducer,
   },
 });
 
